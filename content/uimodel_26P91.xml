@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WebUIModel adoev="2026" csempeMod="MENU" id="26P91" info="Bevallás a hitelintézetek és a pénzügyi vállalkozások különadójáról" mainDocumentId="26P91" major="1" minor="0" mukodesiMod="NORMAL" name="26P91" templateType="single" tipus="BEVALLAS" webDefaultLength="4" webInfo="Bevallás a hitelintézetek és a pénzügyi vállalkozások különadójáról" webName="26P91" webOnell="false">
+    <Form id="26P91" name="26P91" webDefaultLength="4" webInfo="Bevallás a hitelintézetek és a pénzügyi vállalkozások különadójáról" webName="26P91">
+        <Assistant id="120057" name="AZONOSÍTÓ ADATOK" pos="1" webHelp="E_120057.html">
+            <FieldGroupId>120002</FieldGroupId>
+            <FieldGroupId>120004</FieldGroupId>
+            <FieldGroupId>120007</FieldGroupId>
+        </Assistant>
+        <Assistant id="120058" name="[KULONADO] – 316 – KÜLÖNADÓ LEVEZETÉS" pos="2" webHelp="E_120058.html">
+            <FieldGroupId>120013</FieldGroupId>
+            <FieldGroupId>120014</FieldGroupId>
+            <FieldGroupId>120015</FieldGroupId>
+        </Assistant>
+        <Assistant id="120059" name="[ONELL] - ÖNELLENŐRZÉS" pos="3" webHelp="E_120059.html">
+            <FieldGroupId>120019</FieldGroupId>
+            <FieldGroupId>120020</FieldGroupId>
+            <FieldGroupId>120022</FieldGroupId>
+            <FieldGroupId>120023</FieldGroupId>
+            <FieldGroupId>120024</FieldGroupId>
+        </Assistant>
+        <Assistants>
+            <AssistantItem id="ROOT_ASSISTANTITEM" leaf="false" name="Mezők hozzáadása" pos="0">
+                <AssistantItem id="120057" leaf="true" name="AZONOSÍTÓ ADATOK" parentId="ROOT_ASSISTANTITEM" pos="1" webHelp="E_120057.html">
+                    <FieldGroupId>120002</FieldGroupId>
+                    <FieldGroupId>120004</FieldGroupId>
+                    <FieldGroupId>120007</FieldGroupId>
+                </AssistantItem>
+                <AssistantItem id="120058" leaf="true" name="[KULONADO] – 316 – KÜLÖNADÓ LEVEZETÉS" parentId="ROOT_ASSISTANTITEM" pos="2" webHelp="E_120058.html">
+                    <FieldGroupId>120013</FieldGroupId>
+                    <FieldGroupId>120014</FieldGroupId>
+                    <FieldGroupId>120015</FieldGroupId>
+                </AssistantItem>
+                <AssistantItem id="120059" leaf="true" name="[ONELL] - ÖNELLENŐRZÉS" parentId="ROOT_ASSISTANTITEM" pos="3" webHelp="E_120059.html">
+                    <FieldGroupId>120019</FieldGroupId>
+                    <FieldGroupId>120020</FieldGroupId>
+                    <FieldGroupId>120022</FieldGroupId>
+                    <FieldGroupId>120023</FieldGroupId>
+                    <FieldGroupId>120024</FieldGroupId>
+                </AssistantItem>
+            </AssistantItem>
+            <TileAssistants>
+                <TileAssistantItem id="120057"/>
+                <TileAssistantItem id="120058"/>
+                <TileAssistantItem id="120059"/>
+            </TileAssistants>
+        </Assistants>
+        <Attachements>
+            <ATCSIZES size="0MB" sum_size="0MB" rsize="2147483647" rsum_size="2147483647"/>
+        </Attachements>
+        <BalanceData adonem="316" fid="0A0001A002A" msg="befizetendő"/>
+        <BalanceData adonem="316" fid="0A0001A003A" msg="visszaigényelhető"/>
+        <BalanceData adonem="215" fid="0A0001A004A" msg="befizetendő"/>
+        <BalanceData adonem="215" fid="0A0001A005A" msg="visszaigényelhető"/>
+        <FieldGroup defaultGroup="true" index="0" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" fgroupType="NORMAL" id="120002" name="Adózó adatai" wId="FG1">
+            <Fid>0A0001C001A</Fid>
+            <Fid>0A0001C003A</Fid>
+            <Fid>0A0001C004A</Fid>
+            <Layout type="GROUP" wId="FG1_G1">
+                <Layout type="INLINE" wId="FG1_G1_I1">
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG1_G1_I1_IG1">
+                        <Field id="0A0001C001A" label="Adózó adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="adószám" webLength="3" wId="FG1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG1_G1_I1_IG2">
+                        <Field id="0A0001C003A" label="Jogelőd adószáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="jogelőd_adószám" webLength="3" wId="FG1_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="########-#-##" maxLength="13" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout type="GROUP" wId="FG1_G2">
+                <Layout type="INLINE" wId="FG1_G2_I1">
+                    <Layout fixGrid="false" grid="12" type="INLINE_GROUP" wId="FG1_G2_I1_IG1">
+                        <Field id="0A0001C004A" label="Adózó neve" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="adózó_név" webLength="12" wId="FG1_G2_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="80" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="1" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" fgroupType="NORMAL" id="120004" name="Ügyintéző adatai" wId="FG2">
+            <Fid>0A0001C005A</Fid>
+            <Fid>0A0001C006A</Fid>
+            <Layout type="GROUP" wId="FG2_G1">
+                <Layout type="INLINE" wId="FG2_G1_I1">
+                    <Layout fixGrid="false" grid="9" type="INLINE_GROUP" wId="FG2_G1_I1_IG1">
+                        <Field id="0A0001C005A" label="Neve" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="ügyintéző_neve" webLength="9" wId="FG2_G1_I1_IG1_F1" calculated="false" default="false" irids="8" maxLength="80" metaType="1"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="3" type="INLINE_GROUP" wId="FG2_G1_I1_IG2">
+                        <Field id="0A0001C006A" label="Telefonszáma" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" subType="tel" type="TEXT" vid="ügyintéző_telelfonszáma" webLength="3" wId="FG2_G1_I1_IG2_F1" calculated="false" default="false" irids="8" maxLength="40" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="true" index="2" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" webHelp="G_120007.html" fgroupType="NORMAL" id="120007" name="Bevallás jellemzői, javítás (helyesbítés) jelölése" wId="FG3">
+            <Fid>0A0001C002A</Fid>
+            <Fid>0A0001D001A</Fid>
+            <Fid>0A0001D002A</Fid>
+            <Fid>0A0001D004A</Fid>
+            <Fid>0A0001D005A</Fid>
+            <Fid>0A0001D003A</Fid>
+            <Fid>0A0001D006A</Fid>
+            <Layout type="GROUP" wId="FG3_G1">
+                <Layout type="INLINE" wId="FG3_G1_I1">
+                    <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG3_G1_I1_IG1">
+                        <Field id="0A0001C002A" label="Hibásnak minősített bevallás vonalkódja" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="vonalkód" webLength="4" wId="FG3_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="##########" maxLength="10" metaType="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="Bevallás" type="SUBTITLE" wId="FG3_ST2">
+                <Layout type="GROUP" wId="FG3_ST2_G1">
+                    <Layout type="INLINE_JOINT" wId="FG3_ST2_G1_IJ1">
+                        <Layout type="INLINE_JOINT_GROUP" wId="FG3_ST2_G1_IJ1_IJG1">
+                            <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_ST2_G1_IJ1_IJG1_IG1">
+<Field id="0A0001D001A" label="Időszak kezdete" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="bev_időszak_kezdete" webLength="2" wId="FG3_ST2_G1_IJ1_IJG1_IG1_F1" calculated="false" default="false" irids="3" mask="2026.##.##-" maxLength="8" metaType="2"/>
+                            </Layout>
+                        </Layout>
+                        <Layout type="INLINE_JOINT_GROUP" wId="FG3_ST2_G1_IJ1_IJG2">
+                            <Layout fixGrid="false" grid="1" type="INLINE_GROUP">
+<Field id="120009" mandatory="false" readonly="false" searcher="false" separatorType="LABEL" separatorValue="-" style="" type="SEPARATOR" webLength="1" calculated="false" default="false" irids="0" metaType="0"/>
+                            </Layout>
+                        </Layout>
+                        <Layout type="INLINE_JOINT_GROUP" wId="FG3_ST2_G1_IJ1_IJG3">
+                            <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_ST2_G1_IJ1_IJG3_IG1">
+<Field id="0A0001D002A" label="Időszak vége" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="DATE" vid="bev_időszak_vége" webLength="2" wId="FG3_ST2_G1_IJ1_IJG3_IG1_F1" calculated="false" default="false" irids="3" mask="2026.##.##" maxLength="8" metaType="2"/>
+                            </Layout>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout type="GROUP" wId="FG3_G3">
+                <Layout type="INLINE" wId="FG3_G3_I1">
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_G3_I1_IG1">
+                        <Field id="0A0001D004A" label="Típusa" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="bev_típus" webLength="2" wId="FG3_G3_I1_IG1_F1" calculated="false" default="false" dynList="false" irids="1" mask="#" maxLength="1" metaType="1" validation="true" valuesListIndex="2"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_G3_I1_IG2">
+                        <Field id="0A0001D005A" label="Fajtája" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="bev_fajta" webLength="2" wId="FG3_G3_I1_IG2_F1" calculated="false" default="false" dynList="false" irids="3" mask="#" maxLength="1" metaType="2" validation="true" valuesListIndex="3"/>
+                    </Layout>
+                    <Layout fixGrid="false" grid="2" type="INLINE_GROUP" wId="FG3_G3_I1_IG3">
+                        <Field id="0A0001D003A" label="Jellege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="bev_jelleg" webLength="2" wId="FG3_G3_I1_IG3_F1" calculated="false" default="false" dynList="false" irids="1" maxLength="1" metaType="1" validation="true" valuesListIndex="1"/>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout grid="2" longLabel="false" type="VERTICAL" wId="FG3_V4">
+                <Field id="0A0001D006A" label="Benyújtás oka" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="COMBOBOX" vid="benyujt_ok" webLength="2" wId="FG3_V4_F1" calculated="false" default="false" dynList="false" irids="3" mask="#" maxLength="1" metaType="2" validation="true" valuesListIndex="4"/>
+            </Layout>
+            <Layout longLabel="false" type="VERTICAL" wId="FG3_V5">
+                <Field id="120016" label="[KULONADO] 7-8. sorok" mandatory="false" readonly="false" searcher="false" type="LINK" wId="FG3_V5_F1" calculated="false" default="false" irids="0" metaType="0">
+                    <FGroupId>120015</FGroupId>
+                    <LinkFocus fgroup="120015" fid="0B0001E0007BA"/>
+                </Field>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="true" index="3" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" webHelp="G_120013.html" fgroupType="NORMAL" id="120013" name="Adóalap és adó" wId="FG4">
+            <Fid>0B0001C0001BA</Fid>
+            <Fid>0B0001C0002BA</Fid>
+            <Fid>0B0001C0003BA</Fid>
+            <Fid>0B0001C0004BA</Fid>
+            <Layout label="1. A különadó alapja (a 2024. adóévi éves beszámoló alapján meghatározott adózás előtti eredmény korrigált összege)" type="SUBTITLE" wId="FG4_ST1">
+                <Layout type="GROUP" wId="FG4_ST1_G1">
+                    <Layout type="INLINE" wId="FG4_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG4_ST1_G1_I1_IG1">
+                            <Field ariaText="1. A különadó alapja (a 2024. adóévi éves beszámoló alapján meghatározott adózás előtti eredmény korrigált összege)" id="0B0001C0001BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B1" webLength="4" wId="FG4_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="2. Az 1. sorban feltüntetett adóalap 20 milliárd forintot meg nem haladó része után számított 10% különadó összege " type="SUBTITLE" wId="FG4_ST2">
+                <Layout type="GROUP" wId="FG4_ST2_G1">
+                    <Layout type="INLINE" wId="FG4_ST2_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG4_ST2_G1_I1_IG1">
+                            <Field ariaText="2. Az 1. sorban feltüntetett adóalap 20 milliárd forintot meg nem haladó része után számított 10% különadó összege " id="0B0001C0002BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B2" webLength="4" wId="FG4_ST2_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="3. Az 1. sorban feltüntetett adóalap 20 milliárd forint feletti része után számított  30% különadó összege" type="SUBTITLE" wId="FG4_ST3">
+                <Layout type="GROUP" wId="FG4_ST3_G1">
+                    <Layout type="INLINE" wId="FG4_ST3_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG4_ST3_G1_I1_IG1">
+                            <Field ariaText="3. Az 1. sorban feltüntetett adóalap 20 milliárd forint feletti része után számított  30% különadó összege" id="0B0001C0003BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B3" webLength="4" wId="FG4_ST3_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="4. Az adóévben összesen megállapított különadó összege (2. + 3.)" type="SUBTITLE" wId="FG4_ST4">
+                <Layout type="GROUP" wId="FG4_ST4_G1">
+                    <Layout type="INLINE" wId="FG4_ST4_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG4_ST4_G1_I1_IG1">
+                            <Field ariaText="4. Az adóévben összesen megállapított különadó összege (2. + 3.)" id="0B0001C0004BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B4" webLength="4" wId="FG4_ST4_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="true" index="4" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" webHelp="G_120014.html" fgroupType="NORMAL" id="120014" name="Fizetendő adórészletek félévente (adónemkód: 316)" wId="FG5">
+            <Fid>0B0001D0005BA</Fid>
+            <Fid>0B0001D0006BA</Fid>
+            <Layout label="5. 2026. június 10." type="SUBTITLE" wId="FG5_ST1">
+                <Layout type="GROUP" wId="FG5_ST1_G1">
+                    <Layout type="INLINE" wId="FG5_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG5_ST1_G1_I1_IG1">
+                            <Field ariaText="5. 2026. június 10." id="0B0001D0005BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B5" webLength="4" wId="FG5_ST1_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="6. 2026. december 10. (az állampapír-állomány névértéknövekménye miatti adócsökkentés nélkül számított adó alapján)" type="SUBTITLE" wId="FG5_ST2">
+                <Layout type="GROUP" wId="FG5_ST2_G1">
+                    <Layout type="INLINE" wId="FG5_ST2_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG5_ST2_G1_I1_IG1">
+                            <Field ariaText="6. 2026. december 10. (az állampapír-állomány névértéknövekménye miatti adócsökkentés nélkül számított adó alapján)" id="0B0001D0006BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B6" webLength="4" wId="FG5_ST2_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="5" maxCount="0" toggleSwitch="false" type="SIMPLE" visualType="open" webHelp="G_120015.html" fgroupType="NORMAL" id="120015" name="A 2026. december 10-én esedékes adórészlet csökkentése (adónemkód: 316)" wId="FG6">
+            <Fid>0B0001E0007BA</Fid>
+            <Fid>0B0001E0008BA</Fid>
+            <Layout label="7. Különadófizetési-kötelezettség csökkentésének összege (az állampapír-állomány névértéknövekményének 10%-a, de legfeljebb a 4. sor 30%-a)" type="SUBTITLE" wId="FG6_ST1">
+                <Layout type="GROUP" wId="FG6_ST1_G1">
+                    <Layout type="INLINE" wId="FG6_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG6_ST1_G1_I1_IG1">
+                            <Field ariaText="7. Különadófizetési-kötelezettség csökkentésének összege (az állampapír-állomány névértéknövekményének 10%-a, de legfeljebb a 4. sor 30%-a)" id="0B0001E0007BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B7" webLength="4" wId="FG6_ST1_G1_I1_IG1_F1" calculated="false" default="false" help="D_252.html" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="8. Az adócsökkentés után fennmaradó, 2026. december 10-ig megfizetendő adórészlet (6. – 7.)" type="SUBTITLE" wId="FG6_ST2">
+                <Layout type="GROUP" wId="FG6_ST2_G1">
+                    <Layout type="INLINE" wId="FG6_ST2_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG6_ST2_G1_I1_IG1">
+                            <Field ariaText="8. Az adócsökkentés után fennmaradó, 2026. december 10-ig megfizetendő adórészlet (6. – 7.)" id="0B0001E0008BA" label="" labelGrid="12" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[KULONADO]B8" webLength="4" wId="FG6_ST2_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout longLabel="false" type="VERTICAL" wId="FG6_V3">
+                <Field id="120017" label="Benyújtás oka" mandatory="false" readonly="false" searcher="false" type="LINK" wId="FG6_V3_F1" calculated="false" default="false" irids="0" metaType="0">
+                    <FGroupId>120007</FGroupId>
+                    <LinkFocus fgroup="120007" fid="0A0001D006A"/>
+                </Field>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="6" maxCount="0" toggleSwitch="false" type="SIMPLE" fgroupType="NORMAL" id="120019" name="Ismételt önellenőrzés" wId="FG7">
+            <Fid>0C0001C001A</Fid>
+            <Layout type="HORIZONTAL" wId="FG7_H1">
+                <Field id="0C0001C001A" label="Ismételt önellenőrzés jelölése" labelPosition="RIGHT" mandatory="false" readonly="false" searcher="false" type="CHECKBOX" vid="ism_önellenőrzés" webLength="3" wId="FG7_H1_F1" calculated="false" default="false" irids="9" metaType="4"/>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="7" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120020.html" fgroupType="NORMAL" id="120020" name="Megállapított különadó változása" wId="FG8">
+            <Fid>0C0001D0001AA</Fid>
+            <Fid>0C0001D0001BA</Fid>
+            <Fid>0C0001D0001CA</Fid>
+            <Layout label="1. Az adóévre megállapított  befizetendő különadó  összegének változása (adónemkód: 316)" type="SUBTITLE" wId="FG8_ST1">
+                <Layout type="GROUP" wId="FG8_ST1_G1">
+                    <Layout type="INLINE" wId="FG8_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG8_ST1_G1_I1_IG1">
+                            <Field id="0C0001D0001AA" label="Adó eredeti összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]A1" webLength="4" wId="FG8_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG8_ST1_G1_I1_IG2">
+                            <Field id="0C0001D0001BA" label="Adó helyes összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B1" webLength="4" wId="FG8_ST1_G1_I1_IG2_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG8_ST1_G1_I1_IG3">
+                            <Field id="0C0001D0001CA" label="Adókötelezettség változása (±)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]C1" webLength="4" wId="FG8_ST1_G1_I1_IG3_F1" calculated="true" default="false" irids="10" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="8" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120022.html" fgroupType="NORMAL" id="120022" name="Fizetendő különadó-részletek változása (az állampapír-állomány névértéknövekménye miatti adócsökkentés nélkül)" wId="FG9">
+            <Fid>0C0001E0002AA</Fid>
+            <Fid>0C0001E0002BA</Fid>
+            <Fid>0C0001E0002CA</Fid>
+            <Fid>0C0001E0003AA</Fid>
+            <Fid>0C0001E0003BA</Fid>
+            <Fid>0C0001E0003CA</Fid>
+            <Layout label="2. A 2026. június 10-én esedékes adórészlet változása (adónemkód: 316)" type="SUBTITLE" wId="FG9_ST1">
+                <Layout type="GROUP" wId="FG9_ST1_G1">
+                    <Layout type="INLINE" wId="FG9_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST1_G1_I1_IG1">
+                            <Field id="0C0001E0002AA" label="Adó eredeti összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]A2" webLength="4" wId="FG9_ST1_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST1_G1_I1_IG2">
+                            <Field id="0C0001E0002BA" label="Adó helyes összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B2" webLength="4" wId="FG9_ST1_G1_I1_IG2_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST1_G1_I1_IG3">
+                            <Field id="0C0001E0002CA" label="Adókötelezettség változása (±)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]C2" webLength="4" wId="FG9_ST1_G1_I1_IG3_F1" calculated="true" default="false" irids="10" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="3. A 2026. december 10-én esedékes adórészlet változása (adócsökkentés nélkül számított adó alapján) (adónemkód: 316)" type="SUBTITLE" wId="FG9_ST2">
+                <Layout type="GROUP" wId="FG9_ST2_G1">
+                    <Layout type="INLINE" wId="FG9_ST2_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST2_G1_I1_IG1">
+                            <Field id="0C0001E0003AA" label="Adó eredeti összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]A3" webLength="4" wId="FG9_ST2_G1_I1_IG1_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST2_G1_I1_IG2">
+                            <Field id="0C0001E0003BA" label="Adó helyes összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B3" webLength="4" wId="FG9_ST2_G1_I1_IG2_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG9_ST2_G1_I1_IG3">
+                            <Field id="0C0001E0003CA" label="Adókötelezettség változása (±)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]C3" webLength="4" wId="FG9_ST2_G1_I1_IG3_F1" calculated="true" default="false" irids="10" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="9" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120023.html" fgroupType="NORMAL" id="120023" name="A 2026. december 10-én esedékes fizetendő adórészlet változása (az állampapír-állomány névértéknövekménye miatti adócsökkentés érvényesítése után)" wId="FG10">
+            <Fid>0C0001F0004AA</Fid>
+            <Fid>0C0001F0004BA</Fid>
+            <Fid>0C0001F0004CA</Fid>
+            <Layout label="4. Az adócsökkentés után fennmaradó,  2026. december 10-én esedékes adórészlet változása (adónemkód: 316)" type="SUBTITLE" wId="FG10_ST1">
+                <Layout type="GROUP" wId="FG10_ST1_G1">
+                    <Layout type="INLINE" wId="FG10_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG10_ST1_G1_I1_IG1">
+                            <Field id="0C0001F0004AA" label="Adó eredeti összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]A4" webLength="4" wId="FG10_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG10_ST1_G1_I1_IG2">
+                            <Field id="0C0001F0004BA" label="Adó helyes összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B4" webLength="4" wId="FG10_ST1_G1_I1_IG2_F1" calculated="true" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG10_ST1_G1_I1_IG3">
+                            <Field id="0C0001F0004CA" label="Adókötelezettség változása (±)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]C4" webLength="4" wId="FG10_ST1_G1_I1_IG3_F1" calculated="true" default="false" irids="10" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="10" maxCount="0" toggleSwitch="false" type="SIMPLE" webHelp="G_120024.html" fgroupType="NORMAL" id="120024" name="Felszámított önellenőrzési pótlék megállapítása / Korábbi önellenőrzési pótlék összegének változása" wId="FG11">
+            <Fid>0C0001G0005BA</Fid>
+            <Fid>0C0001G0006AA</Fid>
+            <Fid>0C0001G0006BA</Fid>
+            <Fid>0C0001G0006CA</Fid>
+            <Layout label="5. Felszámított önellenőrzési pótlék összege (a 316 főadónem pozitív irányú változása esetén) (adónemkód: 215)" type="SUBTITLE" wId="FG11_ST1">
+                <Layout type="GROUP" wId="FG11_ST1_G1">
+                    <Layout type="INLINE" wId="FG11_ST1_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG11_ST1_G1_I1_IG1">
+                            <Field id="0C0001G0005BA" label="Pótlék helyes összege (+)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B5" webLength="4" wId="FG11_ST1_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+            <Layout label="6. Korábbi önellenőrzési pótlék összegének módosítása (adónemkód: 215)" type="SUBTITLE" wId="FG11_ST2">
+                <Layout type="GROUP" wId="FG11_ST2_G1">
+                    <Layout type="INLINE" wId="FG11_ST2_G1_I1">
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG11_ST2_G1_I1_IG1">
+                            <Field id="0C0001G0006AA" label="Pótlék eredeti összege" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]A6" webLength="4" wId="FG11_ST2_G1_I1_IG1_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG11_ST2_G1_I1_IG2">
+                            <Field id="0C0001G0006BA" label="Pótlék helyes összege (+)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]B6" webLength="4" wId="FG11_ST2_G1_I1_IG2_F1" calculated="false" default="false" irids="3" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                        <Layout fixGrid="false" grid="4" type="INLINE_GROUP" wId="FG11_ST2_G1_I1_IG3">
+                            <Field id="0C0001G0006CA" label="Pótlék összegének változása (±)" labelPosition="TOP" mandatory="false" readonly="false" searcher="false" type="TEXT" vid="[ONELL]C6" webLength="4" wId="FG11_ST2_G1_I1_IG3_F1" calculated="true" default="false" irids="10" mask="!ezer" maxLength="12" metaType="2"/>
+                        </Layout>
+                    </Layout>
+                </Layout>
+            </Layout>
+        </FieldGroup>
+        <FieldGroup defaultGroup="false" index="-1" maxCount="0" toggleSwitch="false" type="SIMPLE" fgroupType="EGYENLEG" id="120051" name="Egyenleg" wId="FG12">
+            <Fid>0A0001A002A</Fid>
+            <Fid>0A0001A004A</Fid>
+            <Fid>0A0001A003A</Fid>
+            <Fid>0A0001A005A</Fid>
+        </FieldGroup>
+        <InputRule irid="1" irule="[A-Z]"/>
+        <InputRule irid="2" irule="[0-9,.]"/>
+        <InputRule irid="3" irule="[0-9]"/>
+        <InputRule irid="4" irule="[0-9+\-,.]"/>
+        <InputRule irid="5" irule="[A-Z0-9]"/>
+        <InputRule irid="6" irule="[A-ZÁÉÍÓÖŐÚÜŰ]"/>
+        <InputRule irid="7" irule="[^0-9]"/>
+        <InputRule irid="8" irule="[\x20-\uFFFF]"/>
+        <InputRule irid="9" irule="[ X]"/>
+        <InputRule irid="10" irule="[0-9+-]"/>
+        <Menu>
+            <MenuItem id="ROOT_MENUITEM" leaf="false" name="Mezők hozzáadása" pos="0" wizard="false">
+                <MenuItem id="120001" leaf="true" name="Azonosító adatok" parentId="ROOT_MENUITEM" pos="1" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120002</FieldGroupId>
+                    <FieldGroupId>120004</FieldGroupId>
+                    <FieldGroupId>120007</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120011" leaf="true" name="[KULONADO] Hitelintézetek és pénzügyi vállalkozások különadója" parentId="ROOT_MENUITEM" pos="2" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120013</FieldGroupId>
+                    <FieldGroupId>120014</FieldGroupId>
+                    <FieldGroupId>120015</FieldGroupId>
+                </MenuItem>
+                <MenuItem id="120018" leaf="true" name="[ONELL] Önellenőrzés" parentId="ROOT_MENUITEM" pos="3" type="CSEMPE" wizard="false">
+                    <FieldGroupId>120019</FieldGroupId>
+                    <FieldGroupId>120020</FieldGroupId>
+                    <FieldGroupId>120022</FieldGroupId>
+                    <FieldGroupId>120023</FieldGroupId>
+                    <FieldGroupId>120024</FieldGroupId>
+                </MenuItem>
+            </MenuItem>
+            <TileMenus>
+                <TileMenuItem id="120001"/>
+                <TileMenuItem id="120011"/>
+                <TileMenuItem id="120018"/>
+            </TileMenus>
+        </Menu>
+        <Message id="1" msgLevel="warning">
+            <CalcId>344</CalcId>
+            <Msg>A 2026. december 10-én esedékes adórészlet csökkentésére szolgáló sorokat csak akkor lehet kitölteni, ha az azonosító adatok között a bevallás jellemzőinél a Benyújtás oka 2-es (állampapírállomány névértéknövekménye utáni adócsökkentés bevallása). [KULONADO, 7. sor, 8. sor]  (Hibakód=&lt;1067460/M075&gt;)</Msg>
+        </Message>
+        <Message id="2" msgLevel="fatalerror">
+            <CalcId>101000</CalcId>
+            <Msg>[Nyomtatvány] A különadó alapját kötelező kitölteni  [KULONADO, 1. sor] (Hibakód=&lt;1067423/M026&gt;)</Msg>
+        </Message>
+        <Message id="3" msgLevel="fatalerror">
+            <CalcId>101001</CalcId>
+            <Msg>[Nyomtatvány] Önellenőrzéskor kötelező kitölteni a megállapított teljes különadó eredeti összegét az azonos időszaki előzmény szerint, ha az önellenőrzés nem a korábbi önellenőrzési pótlék módosítására vonatkozik. [ONELL, 1. sor, Adó eredeti összege] (Hibakód=&lt;1067425/M034&gt;)</Msg>
+        </Message>
+        <Message id="4" msgLevel="fatalerror">
+            <CalcId>101002</CalcId>
+            <Msg>[Nyomtatvány] A 2026. december 10-én esedékes adórészlet csökkentésére szolgáló sorokat kötelezően ki kell tölteni (legalább nullával), ha az azonosító adatok között a bevallás jellemzőinél a Benyújtás oka 2-es (állampapírállomány névértéknövekménye utáni adócsökkentés bevallása). [KULONADO, 7. sor, 8. sor]  (Hibakód=&lt;1067426/M076&gt;)</Msg>
+        </Message>
+        <Message id="5" msgLevel="error">
+            <CalcId>101003</CalcId>
+            <Msg>[Nyomtatvány] Kérem, adja meg a 17/R bizonylat vonalkódját/vonalkódjait, amennyiben történt részutalás, ellenkező esetben ne töltse ki a Részutalás mezőt! A 17/R vonalkód mezőket oszlop folytonosan kell kitölteni. Egy vonalkód csak egyszer szerepelhet. (Hibakód=&lt;1054131/z019&gt;)</Msg>
+        </Message>
+        <Message id="6" msgLevel="error">
+            <CalcId>101004</CalcId>
+            <Msg>[Nyomtatvány] A 17/R vonalkódja(i) mezőt csak részutalás esetén lehet kitölteni, ennek megtörténtét jelölje a Részutalás mezőben! Ha nem történt részutalás, akkor a mezőket hagyja üresen!  (Hibakód=&lt;1054187/z020&gt;)</Msg>
+        </Message>
+        <Message id="7" msgLevel="error">
+            <CalcId>101005</CalcId>
+            <Msg>[Nyomtatvány] [REVIZORI] Az RDAT lapon a Felszámolás jellege mező csak F3 kódú bevallás esetében tölthető ki!  (Hibakód=&lt;1054188/z021&gt;)</Msg>
+        </Message>
+        <Message id="8" msgLevel="error">
+            <CalcId>101006</CalcId>
+            <Msg>[Nyomtatvány] [REVIZORI] Az RDAT lapon a Felszámolás jellege mezőt F3 kódú bevallás esetében kötelező kitölteni!  (Hibakód=&lt;1054189/z022&gt;)</Msg>
+        </Message>
+        <Message id="9" msgLevel="error">
+            <CalcId>101007</CalcId>
+            <Msg>[Nyomtatvány] Ismételt önellenőrzésben a korábbi önellenőrzési pótlék módosításakor ki kell tölteni a pótlék eredeti összegét és a pótlék helyes összegét is. [ONELL 6. sor] (Hibakód=&lt;1054218/M037&gt;)</Msg>
+        </Message>
+        <Message id="10" msgLevel="error">
+            <CalcId>101008</CalcId>
+            <Msg>[Nyomtatvány] Ha a 2-es benyújtás oka kóddal ellátott önellenőrzés nem a pótlék módosítására vonatkozik, akkor a 2026. december 10-én esedékes, adócsökkentés érvényesítése után fennmaradó fizetendő adórészlet eredeti összege nem lehet kevesebb az adóévre megállapított fizetendő adó eredeti összegének 20%-ánál. [ONELL, 4. sor "eredeti" &gt;= 1. sor "eredeti" 20%-a]  (Hibakód=&lt;1077358/M081&gt;)</Msg>
+        </Message>
+        <Message id="11" msgLevel="error">
+            <CalcId>101009</CalcId>
+            <Msg>[Nyomtatvány] Ha a 2-es benyújtás oka kóddal ellátott önellenőrzés nem a pótlék módosítására vonatkozik, akkor a 2026. december 10-én esedékes, adócsökkentés érvényesítése után fennmaradó fizetendő adórészlet helyes összege nem lehet kevesebb az adóévre megállapított fizetendő adó helyes összegének 20%-ánál. [ONELL, 4. sor "helyes" &gt;= 1. sor "helyes" 20%-a]  (Hibakód=&lt;1077359/M082&gt;)</Msg>
+        </Message>
+        <Message id="12" msgLevel="error">
+            <CalcId>101010</CalcId>
+            <Msg>[Nyomtatvány] Csak ismételt önellenőrzésben módosítható a korábbi önellenőrzési bevallásban vallott önellenőrzési pótlék összege. [ONELL, 6. sor, Ismételt önellenőrzés jelölőmező]  (Hibakód=&lt;1067469/M047&gt;)</Msg>
+        </Message>
+        <Message id="13" msgLevel="error">
+            <CalcId>101011</CalcId>
+            <Msg>[Nyomtatvány] Kötelezettségnövekedés esetén a felszámított önellenőrzési pótlék összege kötelezően kitöltendő. [ONELL, 5. sor]  (Hibakód=&lt;1054115/M036&gt;)</Msg>
+        </Message>
+        <Message id="14" msgLevel="error">
+            <CalcId>101012</CalcId>
+            <Msg>[Nyomtatvány] A félévente fizetendő adórészletek sorai nem tölthetők ki, ha a Bevallás típusa és a Bevallás fajtája mezők értékeinek kombinációja: F1, V1, D1, F3, V3, A, B vagy M. Egyösszegben kell megfizetni az adóévre megállapított különadó (4. sor) teljes összegét. [KULONADO, 5. sor, 6. sor]  (Hibakód=&lt;1067451/M032&gt;)</Msg>
+        </Message>
+        <Message id="15" msgLevel="error">
+            <CalcId>101013</CalcId>
+            <CalcId>101014</CalcId>
+            <CalcId>101015</CalcId>
+            <Msg>[Nyomtatvány] Ha az adócsökkentés érvényesítése után fennmaradó, 2026. december 10-én esedékes adórészlet változásának bármely mezője (eredeti / helyes / változás) nullától eltérő számmal kitöltött, akkor a Benyújtás oka mező értéke csak 2-es lehet. [ONELL, 4. sor, Azonosító adatok / Bevallás jellemzői]  (Hibakód=&lt;1067470/M080&gt;)</Msg>
+        </Message>
+        <Message id="16" msgLevel="error">
+            <CalcId>101016</CalcId>
+            <Msg>[Nyomtatvány] Az adócsökkentés után fennmaradó, 2026. december 10-én esedékes, ténylegesen fizetendő adórészlet  összege nem lehet kevesebb az adóévre megállapított fizetendő adó összegének 20%-ánál. [KULONADO, 8. sor &gt;= 4. sor 20%-a]  (Hibakód=&lt;1077357/M079&gt;)</Msg>
+        </Message>
+        <Message id="17" msgLevel="error">
+            <CalcId>101017</CalcId>
+            <Msg>[Nyomtatvány] A 2026. december 10-én esedékes különadófizetési-kötelezettség csökkentésének összege nem haladhatja meg az adóévre az adócsökkentés figyelembevétele nélkül megállapított fizetendő adó összegének 30%-át. [KULONADO, 7. sor &lt;= 4. sor 30%-a] (Hibakód=&lt;1077356/M077&gt;)</Msg>
+        </Message>
+        <Message id="18" msgLevel="error">
+            <CalcId>101018</CalcId>
+            <Msg>[Nyomtatvány] A 2026. december 10-én esedékes adórészlet csökkentésére szolgáló sorokat csak akkor lehet kitölteni, ha az azonosító adatok között a bevallás jellemzőinél a Benyújtás oka 2-es (állampapírállomány névértéknövekménye utáni adócsökkentés bevallása). [KULONADO, 7. sor, 8. sor]  (Hibakód=&lt;1067460/M075&gt;)</Msg>
+        </Message>
+        <Message id="19" msgLevel="error">
+            <CalcId>101019</CalcId>
+            <CalcId>101020</CalcId>
+            <CalcId>101021</CalcId>
+            <CalcId>101022</CalcId>
+            <Msg>[Nyomtatvány] Nem lehet kitöltött a felszámított önellenőrzési pótlék összege, ha a 316-os adónem módosítására szolgáló sorokban az Adókötelezettség változása mezőkben kötelezettségcsökkenést mutattak ki (&lt;0), és egyikben sincs kötelezettségnövekedés (&gt;0). [ONELL, 1-4. sorok adata, 5. sor]  (Hibakód=&lt;1054199/M046&gt;)</Msg>
+        </Message>
+        <Message id="20" msgLevel="error">
+            <CalcId>101023</CalcId>
+            <Msg>[Nyomtatvány] Az Önellenőrzés mellékleten a főadónemet és a korábbi önellenőrzési pótlékot egyidejűleg módosítani nem lehet. [ONELL, 1-5. sorok vagy 6. sor] (Hibakód=&lt;1067474/M089&gt;)</Msg>
+        </Message>
+        <Message id="21" msgLevel="warning">
+            <CalcId>101024</CalcId>
+            <CalcId>101025</CalcId>
+            <CalcId>101026</CalcId>
+            <CalcId>101027</CalcId>
+            <Msg>[Nyomtatvány] A bevallásban az adó vagy a pótlék összegmezői 6 karakternél hosszabb adatot tartalmaznak. Kérjük, ellenőrizze a kitöltés helyességét!  [ONELL, 1. és 4-6. sorok]  (Hibakód=&lt;1067475/M205&gt;)</Msg>
+        </Message>
+        <Message id="22" msgLevel="warning">
+            <CalcId>101028</CalcId>
+            <CalcId>101029</CalcId>
+            <CalcId>101030</CalcId>
+            <CalcId>101031</CalcId>
+            <CalcId>101032</CalcId>
+            <Msg>[Nyomtatvány] A bevallásban az "adó" összegmezők 6 karakternél hosszabb adatot tartalmaznak. Kérjük, ellenőrizze a kitöltés helyességét!  [KULONADO, 4-8. sorok]  (Hibakód=&lt;1067468/M204&gt;)</Msg>
+        </Message>
+        <Message id="23" msgLevel="error">
+            <CalcId>101033</CalcId>
+            <CalcId>100002</CalcId>
+            <CalcId>100003</CalcId>
+            <Msg>[Nyomtatvány] Verziokontroll=1</Msg>
+        </Message>
+        <Message id="24" msgLevel="warning">
+            <CalcId>172</CalcId>
+            <Msg>Az [ONELL] adatsor csak önellenőrzés esetén tölthető ki. Az azonosító adatoknál a bevallás jellemzői között a Bevallás jellege mezőnél válassza az O értéket.  (Hibakód=&lt;1054275/M021(Hibakód=&lt;m006&gt;)</Msg>
+        </Message>
+        <Message id="25" msgLevel="fatalerror">
+            <CalcId>26</CalcId>
+            <Msg>Az Adózó adószáma mezőt kötelező kitölteni.  (Hibakód=&lt;1054269/M001&gt;)</Msg>
+        </Message>
+        <Message id="26" msgLevel="error">
+            <CalcId>358</CalcId>
+            <Msg>Az Ön által feltüntetett adószám hibás. / Csoportos áfa (áfa kód = 5), illetve csoportos társasági adó alanyok (áfa kód=6) ezt a bizonylatot nem nyújthatják be. (Hibakód=&lt;1054247/a003&gt;)</Msg>
+        </Message>
+        <Message id="27" msgLevel="error">
+            <CalcId>25</CalcId>
+            <Msg>A feltüntetett Adózó adószáma hibás. Csoportos áfaalanyok (áfa kód = 5), illetve csoportos társaságiadó-alanyok (áfa kód = 6) ezt a bizonylatot nem nyújthatják be. (Hibakód=&lt;1054271/M022&gt;)</Msg>
+        </Message>
+        <Message id="28" msgLevel="error">
+            <CalcId>27</CalcId>
+            <Msg>Gazdasági társaság esetén az Adózó adószáma első karaktere 1, 2 vagy 3 lehet. (Hibakód=&lt;1067435/M011&gt;)</Msg>
+        </Message>
+        <Message id="29" msgLevel="error">
+            <CalcId>67</CalcId>
+            <Msg>A Hibásnak minősített bevallás vonalkódjaként megadott adat hibás. (Hibakód=&lt;1054135/M005&gt;)</Msg>
+        </Message>
+        <Message id="30" msgLevel="warning">
+            <CalcId>68</CalcId>
+            <Msg>A Hibásnak minősített bevallás vonalkódját kizárólag akkor lehet kitölteni, ha a korábban benyújtott bevallás javítására az állami adó- és vámhatóság felszólította. A javítóbevallásban a teljes bevallást újra ki kell tölteni, a javításra nem szoruló változatlan adatokat is fel kell tüntetni, nemcsak a javított adatot. (Hibakód=&lt;1054076/M004&gt;)</Msg>
+        </Message>
+        <Message id="31" msgLevel="error">
+            <CalcId>106</CalcId>
+            <Msg>A feltüntetett Jogelőd adószáma hibás. Csoportos áfaalanyok (áfa kód = 5), illetve csoportos társaságiadó-alanyok (áfa kód = 6) ezt a bizonylatot nem nyújthatják be.   (Hibakód=&lt;1054109/M042&gt;)</Msg>
+        </Message>
+        <Message id="32" msgLevel="error">
+            <CalcId>359</CalcId>
+            <Msg>Az Ön által feltüntetett adószám hibás. / Csoportos áfa (áfa kód = 5), illetve csoportos társasági adó alanyok (áfa kód=6) ezt a bizonylatot nem nyújthatják be.  (Hibakód=&lt;1054274/q002&gt;)</Msg>
+        </Message>
+        <Message id="33" msgLevel="error">
+            <CalcId>107</CalcId>
+            <Msg>Az Adózó adószámának és a Jogelőd adószámának első 8 számjegye nem lehet azonos. (Hibakód=&lt;1054075/M002&gt;)</Msg>
+        </Message>
+        <Message id="34" msgLevel="error">
+            <CalcId>169</CalcId>
+            <Msg>Ha a Jogelőd adószáma kitöltött, akkor az Adózó adószáma sem lehet üres. (Hibakód=&lt;1054270/M003&gt;)</Msg>
+        </Message>
+        <Message id="35" msgLevel="error">
+            <CalcId>339</CalcId>
+            <Msg>Gazdasági társaság esetén a Jogelőd adószáma első karaktere 1, 2 vagy 3 lehet. (Hibakód=&lt;1054194/M090&gt;)</Msg>
+        </Message>
+        <Message id="36" msgLevel="error">
+            <CalcId>98</CalcId>
+            <Msg>Az Adózó nevét kötelező kitölteni. (Hibakód=&lt;1054239/M006&gt;)</Msg>
+        </Message>
+        <Message id="37" msgLevel="error">
+            <CalcId>60</CalcId>
+            <CalcId>3</CalcId>
+            <Msg>Az Ügyintéző neve és telefonszáma csak együttesen lehet kitöltött. (Hibakód=&lt;1054160/M007&gt;)</Msg>
+        </Message>
+        <Message id="38" msgLevel="warning">
+            <CalcId>59</CalcId>
+            <CalcId>2</CalcId>
+            <Msg>Kérjük a későbbi kapcsolatfelvétel érdekében az ügyintézésre jogosult Ügyintéző nevét és telefonos elérhetőségét szíveskedjen megadni. (Hibakód=&lt;1054241/M043&gt;)</Msg>
+        </Message>
+        <Message id="39" msgLevel="fatalerror">
+            <CalcId>170</CalcId>
+            <CalcId>171</CalcId>
+            <Msg>A Bevallási időszak kezdő és záró dátumát kötelező kitölteni. (Hibakód=&lt;1067422/M008&gt;)</Msg>
+        </Message>
+        <Message id="40" msgLevel="error">
+            <CalcId>173</CalcId>
+            <CalcId>281</CalcId>
+            <Msg>A Bevallási időszak csak 2026. évi lehet.  (Hibakód=&lt;1067436/M025&gt;)</Msg>
+        </Message>
+        <Message id="41" msgLevel="warning">
+            <CalcId>352</CalcId>
+            <Msg>Kérjük, ellenőrizze a bevallási időszak kezdő dátumának helyességét. A beírt dátum csak akkor térhet el az év első napjától, ha például a tevékenységét adóév közben kezdte meg, vagy valamely eljárás alá került és az eljárás alatti vagy azt lezáró bevallását nyújtja be.  (Hibakód=&lt;1067440/M060&gt;)</Msg>
+        </Message>
+        <Message id="42" msgLevel="error">
+            <CalcId>231</CalcId>
+            <Msg>A bevallási időszak végdátuma nem lehet korábbi, mint a bevallási időszak kezdő dátuma. (Hibakód=&lt;1054098/n018&gt;)</Msg>
+        </Message>
+        <Message id="43" msgLevel="error">
+            <CalcId>271</CalcId>
+            <Msg>A bevallási időszak záró dátuma az év utolsó napja, ha az adózó nem áll eljárás alatt, nem alakul át, nem szűnik meg (üres a Bevallás típusa). (Hibakód=&lt;1067439/M057&gt;)</Msg>
+        </Message>
+        <Message id="44" msgLevel="error">
+            <CalcId>108</CalcId>
+            <Msg>A Bevallás jellege mező értéke üres (alapbevallás) vagy O (önellenőrzés) lehet. (Hibakód=&lt;1067434/M009&gt;)</Msg>
+        </Message>
+        <Message id="45" msgLevel="error">
+            <CalcId>250</CalcId>
+            <Msg>A bevallás jellege mező értéke O (önellenőrzés), akkor az önellenőrzési mezőcsoport kitöltése kötelező. (Hibakód=&lt;o008&gt;)</Msg>
+        </Message>
+        <Message id="46" msgLevel="error">
+            <CalcId>237</CalcId>
+            <Msg>Ha az önellenőrzési mezőcsoportban az ismételt önellenőrzés mező kitöltött, akkor a bevallás jellege mező értéke O (önellenőrzés). (Hibakód=&lt;o010&gt;)</Msg>
+        </Message>
+        <Message id="47" msgLevel="error">
+            <CalcId>236</CalcId>
+            <Msg>A bevallás jellege mező értéke O (önellenőrzés), H (helyesbítés) vagy üres lehet.  (Hibakód=&lt;1054166/o009&gt;)</Msg>
+        </Message>
+        <Message id="48" msgLevel="warning">
+            <CalcId>109</CalcId>
+            <Msg>A Hibásnak minősített bevallás vonalkódja mező kitöltött. A javítóbevallásban a csak akkor jelölje a Bevallás jellege mezőben az "O" (önellenőrzést), ha az eredeti javítandó bevallás is önellenőrzés volt. (Hibakód=&lt;1054078/M012&gt;)</Msg>
+        </Message>
+        <Message id="49" msgLevel="error">
+            <CalcId>278</CalcId>
+            <Msg>Ha a Bevallás fajtája mező kitöltött, akkor a Bevallás típusa mezőnek is kitöltöttnek kell lenni. (Hibakód=&lt;1054169/x040&gt;)</Msg>
+        </Message>
+        <Message id="50" msgLevel="error">
+            <CalcId>267</CalcId>
+            <Msg>A Bevallás típusa mező értéke üres, F, V, D, A, M, B lehet. (Hibakód=&lt;1067437/M053&gt;)</Msg>
+        </Message>
+        <Message id="51" msgLevel="error">
+            <CalcId>277</CalcId>
+            <Msg>Ha a bevallás típusa kódkockában D (kényszertörlési eljárás) jelzés szerepel, akkor a bevallás fajtája mező értéke csak 1, vagy 2 lehet. (Hibakód=&lt;1054103/x044&gt;)</Msg>
+        </Message>
+        <Message id="52" msgLevel="error">
+            <CalcId>280</CalcId>
+            <Msg>Ha a bevallás típusa F (felszámolás), V (végelszámolás) vagy D (kényszertörlési eljárás), akkor a bevallás fajtáját is ki kell tölteni. (Hibakód=&lt;x013&gt;)</Msg>
+        </Message>
+        <Message id="53" msgLevel="error">
+            <CalcId>268</CalcId>
+            <Msg>A Bevallás fajtája 1, 2, 3 vagy üres lehet. (Hibakód=&lt;1067438/M054&gt;)</Msg>
+        </Message>
+        <Message id="54" msgLevel="error">
+            <CalcId>347</CalcId>
+            <Msg>Ha a bevallás típusa nem F (felszámolás), nem V (végelszámolás), nem D (kényszertörlési eljárás) vagy üres, akkor a bevallás fajtája nem lehet kitöltött. (Hibakód=&lt;x014&gt;)</Msg>
+        </Message>
+        <Message id="55" msgLevel="fatalerror">
+            <CalcId>319</CalcId>
+            <Msg>A Benyújtás oka mező nem lehet üres. Jelölje, hogy éves bevallást (1), vagy az állampapírállomány névértéknövekménye utáni adócsökkentésre vonatkozó bevallást (2) nyújt be.  (Hibakód=&lt;1067424/M064&gt;)</Msg>
+        </Message>
+        <Message id="56" msgLevel="fatalerror">
+            <CalcId>369</CalcId>
+            <Msg>Nem lehet az állampapírállomány névértéknövekménye utáni adócsökkentést tartalmazó bevallást 2026. november 30-ánál korábban benyújtani. A vonatkozó jogszabályi rendelkezés az állampapírállomány összevetésekor vizsgált időtartam végét 2026. november 30-ában határozta meg.  (Hibakód=&lt;M093&gt;)</Msg>
+        </Message>
+        <Message id="57" msgLevel="error">
+            <CalcId>320</CalcId>
+            <Msg>A Benyújtás oka mezőben jelölje, hogy éves bevallást (1), vagy az állampapírállomány névértéknövekménye utáni adócsökkentésre vonatkozó bevallást (2) nyújt be.  (Hibakód=&lt;1054243/M065&gt;)</Msg>
+        </Message>
+        <Message id="58" msgLevel="warning">
+            <CalcId>370</CalcId>
+            <Msg>Nem lehet az állampapírállomány névértéknövekménye utáni adócsökkentést tartalmazó bevallást 2026. november 30-ánál korábban benyújtani. A vonatkozó jogszabályi rendelkezés az állampapírállomány összevetésekor vizsgált időtartam végét 2026. november 30-ában határozta meg. Ha idő előtt nyújtja be a bevallást, akkor azt a NAV a feldolgozásból kizárja.  (Hibakód=&lt;1067445/M094&gt;)</Msg>
+        </Message>
+        <Message id="59" msgLevel="warning">
+            <CalcId>371</CalcId>
+            <Msg>Ne feledje a bevallással egyidejűleg az igazolási kérelmét is benyújtani! Csak akkor lehet az állampapírállomány névértéknövekménye utáni adócsökkentést tartalmazó alapbevallást az adóév december 10-énél később benyújtani, ha az Art. (2017. évi CL. tv.) 51. §-ában és az Air. (2017. évi CLI. tv.) 53. §-ában foglalt előírásoknak megfelelő igazolási kérelemmel a mulasztást kimentik, és a kérelemben felsorakoztatott érvek alapján a kérelmet az adóhatóság elfogadja. Ha e feltételek nem állnak fenn, a NAV az aktuálisan benyújtott késett alapbevallást a feldolgozásból kizárja.  (Hibakód=&lt;1067443/M092&gt;)</Msg>
+        </Message>
+        <Message id="60" msgLevel="error">
+            <CalcId>243</CalcId>
+            <Msg>Ismételt önellenőrzésben a főadónem (316) vagy a pótlék (215) módosítására szolgáló mezőket kötelező kitölteni. A főadónem és a korábbi önellenőrzési pótlék egyidejűleg nem módosítható. [ONELL, 1. sor vagy 6. sor, Eredeti összeg mező]  (Hibakód=&lt;1054116/M039&gt;)</Msg>
+        </Message>
+        <Message id="61" msgLevel="error">
+            <CalcId>242</CalcId>
+            <Msg>Akkor kell átemelni az adózó [KULONADO] adatsorából az adóévre megállapított teljes különadó adatát helyes adóösszegként az [ONELL] adatsorra, ha az [ONELL] adatsoron az adóévre megállapított befizetendő különadó eredeti mezője is kitöltött. Egyébként a mező üres, nem írható. [ONELL, 1. sor] (Hibakód=&lt;1054172/M044&gt;)</Msg>
+        </Message>
+        <Message id="62" msgLevel="error">
+            <CalcId>223</CalcId>
+            <CalcId>224</CalcId>
+            <Msg>Az adóévben összesen megállapított különadó 50-50 %-át kell kimutatni a félévente fizetendő adórészletek összegmezőiben. Az adórészletek sorai akkor tölthetők ki, ha a Bevallás típusa és a Bevallás fajtája mezők értékeinek kombinációja: üres, vagy V2, F2, D2. Egyéb esetben az adóévre megállapított különadó teljes összegét (4. sor) egyösszegben kell megfizetni. [KULONADO, a 4. sor 50%-a, 5. sor, 6. sor]  (Hibakód=&lt;1054089/M031&gt;)</Msg>
+        </Message>
+        <Message id="63" msgLevel="error">
+            <CalcId>285</CalcId>
+            <CalcId>286</CalcId>
+            <Msg>Az adóévben megállapított befizetendő különadó eredeti összegének 50-50 %-át kell kimutatni az adócsökkentés nélkül számított fizetendő különadó-részletek eredeti mezőiben. Az önellenőrzési mellékleten az adócsökkentés nélkül számított fizetendő adórészletek eredeti összegei akkor tölthetők ki, ha a Bevallás típusa és a Bevallás fajtája mezők értékeinek kombinációja: üres, vagy V2, F2, D2. Ha az adózó eljárást kezd vagy fejez be, vagy ha az adózó megszűnik vagy átalakul, akkor az adócsökkentés nélkül számított fizetendő különadó-részletek sorai üresek. [ONELL, az 1. sor 50%-a, 2. sor, 3. sor, Adó eredeti összege]  (Hibakód=&lt;1077354/M035&gt;)</Msg>
+        </Message>
+        <Message id="64" msgLevel="error">
+            <CalcId>297</CalcId>
+            <Msg>A pótlék kötelezettségváltozását a helyes és az eredeti adat különbsége adja. [ONELL, 6. sor]  (Hibakód=&lt;1054119/M083&gt;)</Msg>
+        </Message>
+        <Message id="65" msgLevel="error">
+            <CalcId>298</CalcId>
+            <CalcId>299</CalcId>
+            <CalcId>300</CalcId>
+            <CalcId>301</CalcId>
+            <Msg>Az adókötelezettségváltozást a helyes és az eredeti adat különbsége adja. [ONELL, 1., 2., 3., 4. sorok]  (Hibakód=&lt;1054278/M038&gt;)</Msg>
+        </Message>
+        <Message id="66" msgLevel="error">
+            <CalcId>303</CalcId>
+            <Msg>Akkor kell átemelni a több részletben adófizetésre kötelezett adózó [KULONADO] adatsorából az I. adórészlet adatát helyes adóösszegként az [ONELL] adatsorra, ha az [ONELL] adatsoron az I. adórészlet eredeti mezője is kitöltött. Egyébként a mező üres, nem írható. [ONELL, 2. sor] (Hibakód=&lt;1054090/M084&gt;)</Msg>
+        </Message>
+        <Message id="67" msgLevel="error">
+            <CalcId>304</CalcId>
+            <Msg>Akkor kell átemelni a több részletben adófizetésre kötelezett adózó [KULONADO] adatsorából az adócsökkentés nélkül számított II. adórészlet adatát helyes adóösszegként az [ONELL] adatsorra, ha az [ONELL] adatsoron az adócsökkentés nélkül számított II. adórészlet eredeti mezője is kitöltött. Egyébként a mező üres, nem írható. [ONELL, 3. sor] (Hibakód=&lt;1054250/M085&gt;)</Msg>
+        </Message>
+        <Message id="68" msgLevel="error">
+            <CalcId>305</CalcId>
+            <Msg>Az állampapírállomány névértéknövekménye utáni adócsökkentés miatt benyújtott önellenőrzésben akkor kell átemelni a több részletben adófizetésre kötelezett adózó [KULONADO] adatsorából az adócsökkentés után fennmaradó, 2026. december 10-én esedékes adórészlet adatát helyes adóösszegként az [ONELL] adatsorra, ha az [ONELL] adatsoron az adócsökkentés után fennmaradó, 2026. december 10-én esedékes adórészlet eredeti mezője is kitöltött. Egyébként a mező üres, nem írható. [ONELL, 4. sor] (Hibakód=&lt;1067473/M086&gt;)</Msg>
+        </Message>
+        <Message id="69" msgLevel="error">
+            <CalcId>309</CalcId>
+            <Msg>Az éves különadóalap 20 milliárd forintot meg nem haladó része után számított 10% különadó összege. A mező üresen nem hagyható, nullát tartalmaz, ha a különadó alapja nulla. [KULONADO, 2. sor] (Hibakód=&lt;1077312/M061&gt;)</Msg>
+        </Message>
+        <Message id="70" msgLevel="error">
+            <CalcId>310</CalcId>
+            <Msg>Az éves különadóalap 20 milliárd forint feletti része után számított 30% különadó összege. A mező üresen nem hagyható, nullát tartalmaz, ha a különadó alapja a 10%-os adómérték sávjában marad, vagy nulla. [KULONADO, 3. sor] (Hibakód=&lt;1077315/M062&gt;)</Msg>
+        </Message>
+        <Message id="71" msgLevel="error">
+            <CalcId>311</CalcId>
+            <Msg>Az éves különadóalapra 10%-kal és 30%-kal számított különadó részösszegek együttesen képezik az adóévben összesen megállapított különadó teljes összegét. Éves különadóként legalább nullát kell kimutatni. [KULONADO, 4. sor = 2. sor + 3. sor] (Hibakód=&lt;1077316/M063&gt;)</Msg>
+        </Message>
+        <Message id="72" msgLevel="error">
+            <CalcId>324</CalcId>
+            <Msg>Az állampapírállománya névértéknövekményének 10%-ával csökkentheti a 2026. december 10-én esedékes adórészletét. Az adócsökkentés nem haladhatja meg az adóévre az adócsökkentés figyelembevétele nélkül megállapított fizetendő adó összegének 30%-át. Az esedékességkor - 2026. december 10-én - fennmaradó ténylegesen fizetendő összeg tehát nem csökkenhet az adóévre megállapított fizetendő adó összegének 20%-a alá. [KULONADO, 8. sor = 6. sor  - 7. sor]  (Hibakód=&lt;1077355/M078&gt;)</Msg>
+        </Message>
+        <Message id="73" msgLevel="error">
+            <CalcId>326</CalcId>
+            <Msg>A 2026. december 10-én esedékes különadófizetési-kötelezettség csökkentésének összege nem haladhatja meg az adóévre az adócsökkentés figyelembevétele nélkül megállapított fizetendő adó összegének 30%-át. [KULONADO, 7. sor &lt;= 4. sor 30%-a] (Hibakód=&lt;1077356/M077&gt;)</Msg>
+        </Message>
+        <Message id="74" msgLevel="error">
+            <CalcId>345</CalcId>
+            <Msg>Futtassa a számított mezők újraszámítását! (Hibakód=&lt;1054141/w010&gt;)</Msg>
+        </Message>
+        <Message id="75" msgLevel="error">
+            <CalcId>356</CalcId>
+            <CalcId>357</CalcId>
+            <Msg>Csak ismételt önellenőrzésben módosítható a korábbi önellenőrzési bevallásban vallott önellenőrzési pótlék összege. [ONELL, 6. sor, Ismételt önellenőrzés jelölőmező]  (Hibakód=&lt;1067469/M047&gt;)</Msg>
+        </Message>
+        <Message id="76" msgLevel="error">
+            <CalcId>364</CalcId>
+            <Msg>Az adózó az önellenőrzésében a felszámított önellenőrzési pótlék összegét, vagy a korábbi önellenőrzési pótlék összegének módosításakor a kötelezettségnövekedést Ezer forintban állapítja meg. Az összeg a megfizetendő tételek adatait bemutató Egyenleg panelen átalakítva, Forintban jelenik meg. [ONELL, 5b, 6c, (+), Egyenleg panel]  (Hibakód=&lt;M222&gt;)</Msg>
+        </Message>
+        <Message id="77" msgLevel="error">
+            <CalcId>365</CalcId>
+            <Msg>Az adózó az önellenőrzésében a korábbi önellenőrzési pótlék összegének módosításakor a kötelezettségcsökkenést Ezer forintban állapítja meg. Az összeg a visszaigényelhető tételek adatait bemutató Egyenleg panelen átalakítva, Forintban jelenik meg. [ONELL, 6c, (-), Egyenleg panel]  (Hibakód=&lt;M223&gt;)</Msg>
+        </Message>
+        <Message id="78" msgLevel="error">
+            <CalcId>366</CalcId>
+            <Msg>Ha az adót egyösszegben megfizetni köteles adózó az önellenőrzésében az adóévre megállapított fizetendő teljes különadóját, továbbá az adót két részletben megfizető adózó a fizetendő különadója I. részletét, és az adócsökkentés nélkül számított II. részletét vagy a fizetendő különadója II. részletének adócsökkentés után fennmaradó részét módosítja, a kötelezettségcsökkenést Ezer forintban állapítja meg. Az összeg a visszaigényelhető tételek adatait bemutató Egyenleg panelen átalakítva, Forintban jelenik meg. [ONELL, 1c, 2c, 3c, 4c (-), Egyenleg panel]  (Hibakód=&lt;M225&gt;)</Msg>
+        </Message>
+        <Message id="79" msgLevel="error">
+            <CalcId>367</CalcId>
+            <Msg>A fizetendő adót egyösszegben megfizetni köteles hitelintézet és pénzügyi vállalkozás az alapbevallásában az adóévben összesen megállapított különadója összegét, továbbá a fizetendő adót két részletben megfizető adózó a Fizetendő adó I. részletét, és a nem csökkentett II. részletét vagy a Fizetendő adó II. részletének az állampapírállomány névértéknövekménye miatti adócsökkentés után fennmaradó részét Ezer forintban állapítja meg. Az összeg a megfizetendő tételek adatait bemutató Egyenleg panelen átalakítva, Forintban jelenik meg. [KULONADO, 4b, 5b, 6b, 8b, Egyenleg panel]  Ha az adót egyösszegben megfizetni köteles adózó az önellenőrzésében az adóévre megállapított fizetendő teljes különadóját, továbbá az adót két részletben megfizető adózó a fizetendő különadója I. részletét, és az adócsökkentés nélkül számított II. részletét vagy a fizetendő különadója II. részletének adócsökkentés után fennmaradó részét módosítja, a kötelezettségnövekedést Ezer forintban állapítja meg. Az összeg a megfizetendő tételek adatait bemutató Egyenleg panelen átalakítva, Forintban jelenik meg. [ONELL, 1c, 2c, 3c, 4c (+), Egyenleg panel]  (Hibakód=&lt;M224&gt;)</Msg>
+        </Message>
+        <Message id="80" msgLevel="warning">
+            <CalcId>100007</CalcId>
+            <CalcId>100005</CalcId>
+            <CalcId>100006</CalcId>
+            <CalcId>100004</CalcId>
+            <Msg>Ellenőrizze, hogy valóban ezer forintban adta meg az adatot! (Hibakód=&lt;m005&gt;)</Msg>
+        </Message>
+        <SearchFieldGroupId>120002</SearchFieldGroupId>
+        <SearchFieldGroupId>120004</SearchFieldGroupId>
+        <SearchFieldGroupId>120007</SearchFieldGroupId>
+        <SearchFieldGroupId>120013</SearchFieldGroupId>
+        <SearchFieldGroupId>120014</SearchFieldGroupId>
+        <SearchFieldGroupId>120015</SearchFieldGroupId>
+        <SearchFieldGroupId>120019</SearchFieldGroupId>
+        <SearchFieldGroupId>120020</SearchFieldGroupId>
+        <SearchFieldGroupId>120022</SearchFieldGroupId>
+        <SearchFieldGroupId>120023</SearchFieldGroupId>
+        <SearchFieldGroupId>120024</SearchFieldGroupId>
+        <ValuesList id="440999338" index="1">
+            <List>O=Önellenőrzés</List>
+            <Value>O</Value>
+        </ValuesList>
+        <ValuesList id="-430778934" index="2">
+            <List>F=Felszámolás</List>
+            <List>V=Végelszámolás</List>
+            <List>D=Kényszertörlési eljárás</List>
+            <List>A=Átalakulás, egyesülés, szétválás</List>
+            <List>M=Egyéb jogutód nélküli megszűnés</List>
+            <List>B=EU más tagállamában illetőséggel bíró gazdasági társaságba történő beolvadás</List>
+            <Value>F</Value>
+            <Value>V</Value>
+            <Value>D</Value>
+            <Value>A</Value>
+            <Value>M</Value>
+            <Value>B</Value>
+        </ValuesList>
+        <ValuesList id="-1812693609" index="3">
+            <List>1=Eljárást megelőző időszakra vonatkozó bevallás</List>
+            <List>2=Eljárás ideje alatt benyújtott bevallás</List>
+            <List>3=Lezáró bevallás</List>
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+        </ValuesList>
+        <ValuesList id="918501874" index="4">
+            <List>1=Éves bevallás</List>
+            <List>2=Állampapírállomány névértéknövekménye utáni adócsökkentés bevallása</List>
+            <Value>1</Value>
+            <Value>2</Value>
+        </ValuesList>
+    </Form>
+</WebUIModel>
